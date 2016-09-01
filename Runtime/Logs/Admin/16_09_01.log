@@ -1,0 +1,726 @@
+[ 2016-09-01T19:32:24+08:00 ] 123.161.208.16 /weiphp3.0/index.php?s=/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+SQL: SHOW COLUMNS FROM `wp_hooks` [ RunTime:0.0005s ]
+SQL: SELECT `name`,`addons` FROM `wp_hooks`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_plugin` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('ReturnTop')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('SocialComment')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('EditorForAdmin')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('SiteStat','SystemInfo','DevTeam')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Editor')  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind')  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Vote','Wecome','UserCenter','WeiSite','Hitegg','Leaflets','CustomReply','Survey','Diy','CustomMenu','Invite','Game','Ask','Forms','CardVouchers','RedBag','Guess','WishCard','RealPrize','ConfigureAccount','BusinessCard','AutoReply','Payment','Comment','ShopCoupon','Coupon','Card','SingIn','Reserve','Wuguai','Sms','Exam','Test','Draw','YaoTV','Analysis','Weiba','QrAdmin','PublicBind')  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Cascade')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Diy')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('DynamicSelect')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('News')  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('DynamicCheckbox')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Material')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_addons` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name` FROM `wp_plugin` WHERE `status` = 1 AND `name` IN ('Prize')  [ RunTime:0.0001s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.033508s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `wp_config` [ RunTime:0.0007s ]
+SQL: SELECT `type`,`name`,`value` FROM `wp_config` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `wp_config` SET `value`='-3' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `wp_user` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid /home/ubuntu/open/weiphp3.0/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0003s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-3' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_manager_menu` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_addons` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wp_public` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 185 行.
+SQL: SHOW COLUMNS FROM `wp_public_link` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wp_attribute` [ RunTime:0.0006s ]
+SQL: UPDATE `wp_attribute` SET `extra`='111:帐号配置
+93:互动游戏
+18:欢迎语
+19:微信用户中心
+56:自定义菜单
+101:微信卡券
+39:微官网
+42:微信宣传页
+48:自定义回复
+50:微调研
+91:微邀约
+97:微抢答
+100:通用表单
+106:微信红包
+107:竞猜
+108:微贺卡
+110:实物奖励
+126:开发者工具箱
+128:微名片
+130:自动回复
+133:支付通
+134:投票
+137:评论互动
+140:没回答的回复
+141:工作授权
+142:优惠券
+143:帮拆礼包
+144:会员卡
+145:签到
+146:微预约
+151:短信服务
+152:微考试
+153:微测试
+162:微社区
+163:扫码管理
+156:比赛抽奖
+164:一键绑定公众号
+' WHERE `name` = 'addon_status' [ RunTime:0.0012s ]
+
+[ 2016-09-01T19:32:24+08:00 ] 123.161.208.16 /weiphp3.0/index.php?s=/Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000216s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+NOTIC: [8] Undefined index: uid /home/ubuntu/open/weiphp3.0/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-3' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = -3 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 185 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = -3  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2016-09-01T19:35:27+08:00 ] 101.226.66.181 /weiphp3.0/index.php?s=/Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000253s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000055s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wp_config` SET `value`='-4' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid /home/ubuntu/open/weiphp3.0/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-4' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 185 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-09-01T19:35:45+08:00 ] 101.226.33.227 /weiphp3.0/index.php?s=/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SELECT `value` FROM `wp_config` WHERE ( name="FOLLOW_YOUKE_UID" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `wp_config` SET `value`='-5' WHERE ( name="FOLLOW_YOUKE_UID" ) [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: uid /home/ubuntu/open/weiphp3.0/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0004s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-5' and g.status='1' )  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 0 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 185 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = 0  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 52 行.
+SQL: SELECT `id`,`title` FROM `wp_addons` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `wp_attribute` SET `extra`='111:帐号配置
+93:互动游戏
+18:欢迎语
+19:微信用户中心
+56:自定义菜单
+101:微信卡券
+39:微官网
+42:微信宣传页
+48:自定义回复
+50:微调研
+91:微邀约
+97:微抢答
+100:通用表单
+106:微信红包
+107:竞猜
+108:微贺卡
+110:实物奖励
+126:开发者工具箱
+128:微名片
+130:自动回复
+133:支付通
+134:投票
+137:评论互动
+140:没回答的回复
+141:工作授权
+142:优惠券
+143:帮拆礼包
+144:会员卡
+145:签到
+146:微预约
+151:短信服务
+152:微考试
+153:微测试
+162:微社区
+163:扫码管理
+156:比赛抽奖
+164:一键绑定公众号
+' WHERE `name` = 'addon_status' [ RunTime:0.0013s ]
+
+[ 2016-09-01T19:35:45+08:00 ] 101.226.33.227 /weiphp3.0/index.php?s=/Admin/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.000246s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: uid /home/ubuntu/open/weiphp3.0/ThinkPHP/Library/Think/Controller.class.php 第 524 行.
+SQL: SHOW COLUMNS FROM `wp_auth_group_access` [ RunTime:0.0009s ]
+SQL: SELECT a.uid,a.group_id,g.title,g.rules FROM wp_auth_group_access a INNER JOIN wp_auth_group g on a.group_id=g.id  WHERE ( a.uid='-5' and g.status='1' )  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`token` FROM `wp_public`  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: addon_status /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 47 行.
+NOTIC: [8] Undefined index: group_id /home/ubuntu/open/weiphp3.0/Application/Common/Model/AddonStatusModel.class.php 第 50 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = -5 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wp_manager_menu` WHERE `uid` = 1 AND `is_hide` = 0 ORDER BY sort asc, id asc  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined variable: addons /home/ubuntu/open/weiphp3.0/Application/Common/Common/function.php 第 501 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 106 行.
+NOTIC: [8] Undefined offset: 60 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 116 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined index: side /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 179 行.
+NOTIC: [8] Undefined offset: 14 /home/ubuntu/open/weiphp3.0/Application/Common/Model/ManagerMenuModel.class.php 第 185 行.
+SQL: SELECT * FROM `wp_public_link` WHERE `uid` = -5  [ RunTime:0.0001s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 48 行.
+NOTIC: [8] Undefined variable: res /home/ubuntu/open/weiphp3.0/Application/Common/Model/PublicModel.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
